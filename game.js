@@ -138,24 +138,7 @@ function asyncLoadGltf(loc) {
         );
     });
 }
-function newObject(matrix,x,y){
-	var tempObj = new Object();
-	if(matrix[x][y]==3){
-		tempObj = {
-		}
-	}else if(matrix[x][y]==2){
-	}else if(matrix[x][y]==1){
-	}else if(matrix[x][y]==0){
-	}
-	var person = {
-	  firstName: "John",
-	  lastName : "Doe",
-	  id       : 5566,
-	  fullName : function() {
-		return this.firstName + " " + this.lastName;
-	  }
-	};
-}
+
 function fillGrid(matrix,grid,structures,scene){
 	
 	let rows = matrix.length;
